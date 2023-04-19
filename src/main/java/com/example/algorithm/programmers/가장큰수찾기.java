@@ -11,7 +11,7 @@ public class 가장큰수찾기 {
     public static int[] solution(int[] array) {
         int[] answer = new int[2];
 
-        /* 이거 왜 안 되지 ,, ? */
+        /* 이거 왜 안 되지 ,, ? -> indexOf()가 안 됨 */
         // answer[0] = Arrays.stream(array).max().getAsInt();
         // answer[1] = Arrays.asList(array).indexOf(answer[0]);
 

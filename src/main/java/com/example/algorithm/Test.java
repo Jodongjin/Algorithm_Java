@@ -1,49 +1,53 @@
 package com.example.algorithm;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
+import java.util.*;
 
 public class Test {
     public static void main(String[] args) {
-        int answer = solution(new int[]{3, 10, 28}, 200);
+        int answer = solution4("1a2b3c4d123Z");
         System.out.println("answer = " + answer);
     }
 
-    public static int solution(int[] array, int n) {
+    /* String.split() */
+    public static int solution2(String my_string) {
         int answer = 0;
-        int[] arr = new int[array.length];
+        String[] arr = my_string.split("[A-Za-z]");
+
+//        for(String s: arr) {
+//            if(s != "")
+//                answer += Integer.parseInt(s);
+//        }
 
         for(int i = 0; i < arr.length; i++) {
-            arr[i] = Math.abs(array[i] - n);
+            if(!arr[i].isEmpty())
+                answer += Integer.parseInt(arr[i]);
         }
-
-        int min = Arrays.stream(arr).min().getAsInt();
-        int minIdx = 0;
-//        int minIdx = Arrays.asList(arr).indexOf(min);
-
-        for(int i = 0; i < arr.length; i++) {
-            if(arr[i] == min)
-                minIdx = i;
-        }
-
-        answer = array[minIdx];
 
         return answer;
     }
 
-    public static int solution2(int[] array, int n) {
+    /* String.replaceAll() */
+    public static int solution3(String my_string) {
         int answer = 0;
-        int min = Math.abs(array[0] - n);
-        int minIdx = 0;
+        String[] str = my_string.replaceAll("[a-zA-Z]", " ").split(" ");
 
-        Arrays.sort(array);
-        for(int i = 1; i < array.length; i++) {
-            if(Math.abs(array[i] - n) < min) {
-                min = Math.abs(array[i] - n);
-                minIdx = i;
-            }
+        for(String s: str) {
+            if(!s.equals(""))
+                answer += Integer.parseInt(s);
         }
-        answer = array[minIdx];
+
+        return answer;
+    }
+
+    /* StringTokenizer */
+    public static int solution4(String my_string) {
+        int answer = 0;
+        String s = my_string.replaceAll("[^0-9]", " ");
+        StringTokenizer st = new StringTokenizer(s, " ");
+
+        while(st.hasMoreTokens()) {
+            answer += Integer.parseInt(st.nextToken());
+        }
 
         return answer;
     }
