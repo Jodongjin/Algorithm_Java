@@ -1,9 +1,9 @@
-package com.example.algorithm;
+package com.example.algorithm.programmers;
 
-import java.util.*;
+import java.util.Arrays;
 import java.util.stream.Collectors;
 
-public class Test {
+public class 문자열밀기 {
     public static void main(String[] args) {
         int answer = solution("hello", "ohell");
         System.out.println("answer = " + answer);
@@ -40,4 +40,3 @@ public class Test {
         return tempB.indexOf(A);
     }
 }
-
