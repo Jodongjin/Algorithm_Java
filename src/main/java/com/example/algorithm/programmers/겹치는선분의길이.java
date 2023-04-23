@@ -1,10 +1,8 @@
-package com.example.algorithm;
+package com.example.algorithm.programmers;
 
-import javax.swing.*;
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.Arrays;
 
-public class Test {
+public class 겹치는선분의길이 {
     public static void main(String[] args) {
         int answer = solution(new int[][]{{0, 1}, {2, 5}, {3, 9}});
         System.out.println("answer = " + answer);
@@ -31,4 +29,3 @@ public class Test {
         return answer;
     }
 }
-
