@@ -1,10 +1,6 @@
-package com.example.algorithm;
+package com.example.algorithm.programmers;
 
-import javax.swing.*;
-import java.util.*;
-import java.util.stream.Collectors;
-
-public class Test {
+public class 평행 {
     public static void main(String[] args) {
         int answer = solution(new int[][]{{1, 4}, {9, 2}, {3, 8}, {11, 6}});
         System.out.println("answer = " + answer);
@@ -31,4 +27,3 @@ public class Test {
         return answer;
     }
 }
-
