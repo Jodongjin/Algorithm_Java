@@ -1,11 +1,8 @@
-package com.example.algorithm;
+package com.example.algorithm.programmers;
 
-import javax.swing.*;
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
-public class Test {
+public class 베스트앨범 {
     public static void main(String[] args) {
         int[] answer = solution2(new String[]{"classic", "pop", "classic", "classic", "pop"}, new int[]{500, 600, 150, 800, 2500});
         System.out.println("answer = " + Arrays.toString(answer));
@@ -180,4 +177,3 @@ public class Test {
         return result;
     }
 }
-
