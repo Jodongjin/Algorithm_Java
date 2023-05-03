@@ -1,11 +1,8 @@
-package com.example.algorithm;
+package com.example.algorithm.programmers;
 
-import javax.swing.*;
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.util.Arrays;
 
-public class Test {
+public class H_Index {
     public static void main(String[] args) {
         int answer = solution2(new int[]{3, 0, 6, 1, 5});
         System.out.println("answer = " + answer);
@@ -26,4 +23,3 @@ public class Test {
         return answer;
     }
 }
-
