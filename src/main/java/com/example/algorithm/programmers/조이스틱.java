@@ -1,11 +1,6 @@
-package com.example.algorithm;
+package com.example.algorithm.programmers;
 
-import javax.swing.*;
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-public class Test {
+public class 조이스틱 {
     public static void main(String[] args) {
         int answer = solution("JEROEN");
         System.out.println("answer = " + answer);
@@ -39,7 +34,7 @@ public class Test {
         }
         rowCnt--;
         answer = rowCnt + colCnt;
-        
+
         return answer;
     }
 }
