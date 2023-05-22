@@ -1,7 +1,6 @@
 package com.example.algorithm.inflearn;
 
 import java.util.*;
-import java.util.stream.StreamSupport;
 
 public class 대소문자변환 {
     public static void main(String[] args) {
