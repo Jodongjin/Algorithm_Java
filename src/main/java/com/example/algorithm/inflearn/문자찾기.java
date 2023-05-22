@@ -1,12 +1,11 @@
 package com.example.algorithm.inflearn;
 
-import com.example.algorithm.Test;
-
 import java.util.Scanner;
 
 public class 문자찾기 {
     public static void main(String[] args) {
-        Test T = new Test();
+        문자찾기 T = new 문자찾기();
+        // 대소문자 구분을 없애기 위해
         Scanner kb = new Scanner(System.in);
         String str = kb.next();
         char c = kb.next().charAt(0);
@@ -19,8 +18,14 @@ public class 문자찾기 {
         str = str.toUpperCase();
         t = Character.toUpperCase(t);
 
+        /*
         for(int i = 0; i < str.length(); i++) {
             if(str.charAt(i) == t)
+                answer++;
+        }
+        */
+        for(char x : str.toCharArray()) {
+            if(x == t)
                 answer++;
         }
 

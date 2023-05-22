@@ -1,14 +1,10 @@
 package com.example.algorithm;
 
-import javax.swing.*;
-import java.math.BigInteger;
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
-public class Test {
+public class Main {
     public static void main(String[] args) {
-        Test T = new Test();
+        Main T = new Main();
         Scanner kb = new Scanner(System.in);
         String str = kb.next();
         char c = kb.next().charAt(0);
