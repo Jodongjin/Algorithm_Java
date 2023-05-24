@@ -68,17 +68,19 @@ public class 멘토링 {
         int answer = 0;
         for(int i = 1; i <= n; i++) {
             for(int j = 1; j <= n; j++) {
+                // i와 j의 값이 같으면 pi, pj의 값이 같으므로 cnt == m이 절대 성사 x
+                // if(i == j) continue; 해도 됨
                 int cnt = 0;
                 for(int k = 0; k < m; k++) {
-                    int pi = -1;
-                    int pj = -1;
+                    int pi = 0; // 어차피 무조건 초기화 됨
+                    int pj = 0;
                     for(int s = 0; s < n; s++) {
                         if(arr[k][s] == i)
                             pi = s;
                         if(arr[k][s] == j)
                             pj = s;
                     }
-                    if(pi > pj)
+                    if(pi < pj) // 수가 작아야 등수가 빠름
                         cnt++;
                 }
 
