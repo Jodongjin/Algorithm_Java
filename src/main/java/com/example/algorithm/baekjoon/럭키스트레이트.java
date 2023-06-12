@@ -1,7 +1,5 @@
 package com.example.algorithm.baekjoon;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class 럭키스트레이트 {
