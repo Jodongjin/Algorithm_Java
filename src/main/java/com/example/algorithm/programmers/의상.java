@@ -25,7 +25,7 @@ public class 의상 {
         for(String key : map.keySet()) {
             answer *= map.get(key);
         }
-        answer--;
+        answer--; // 아무 것도 안 입는 경우의 수 빼기
 
         return answer;
     }
